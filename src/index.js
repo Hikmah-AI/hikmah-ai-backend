@@ -21,7 +21,7 @@ app.post("/ask-hikmah", async (req, res) => {
 
   try {
     const completion = await openai.chat.completions.create({
-      model: "gpt-4-1106-nano",
+      model: "gpt-3.5-turbo",
       messages: [
         {
           role: "system",
